@@ -1,0 +1,23 @@
+{
+  "name": "concava-demo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kukua/concava-demo",
+  "authors": [
+    "Maurits van Mastrigt <maurits@kukua.cc>"
+  ],
+  "description": "ConCaVa demo page",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.6"
+  }
+}
