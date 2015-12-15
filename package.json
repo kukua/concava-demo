@@ -7,7 +7,7 @@
   "scripts": {
     "postinstall": "bower install",
     "postupdate": "bower update",
-    "start": "http-server -p 9001 build/",
+    "start": "http-server -a 0.0.0.0 -p 3000 build/",
     "lint": "eslint src/js/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
