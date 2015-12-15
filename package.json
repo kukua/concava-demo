@@ -5,8 +5,8 @@
   "private": true,
   "main": "src/js/main.js",
   "scripts": {
-    "postinstall": "bower install",
-    "postupdate": "bower update",
+    "postinstall": "bower install --allow-root",
+    "postupdate": "bower update --allow-root",
     "start": "http-server -a 0.0.0.0 -p 3000 build/",
     "lint": "eslint src/js/",
     "test": "echo \"Error: no test specified\" && exit 1"
