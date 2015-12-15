@@ -11,7 +11,7 @@ export default class ConCaVa extends React.Component {
 					<h4 class="ui dividing header">First attribute</h4>
 					<div className="field">
 						<label>Name</label>
-						<input type="text" value="attr1" />
+						<input type="text" value="temperature" />
 					</div>
 					<div className="field">
 						<label>Type</label>
@@ -31,7 +31,7 @@ export default class ConCaVa extends React.Component {
 					<h4 class="ui dividing header">Second attribute</h4>
 					<div className="field">
 						<label>Name</label>
-						<input type="text" value="attr2" />
+						<input type="text" value="humidity" />
 					</div>
 					<div className="field">
 						<label>Type</label>

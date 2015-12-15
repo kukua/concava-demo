@@ -9,8 +9,8 @@ export default class Storage extends React.Component {
 					<thead>
 						<tr>
 							<th>Time</th>
-							<th>attr1</th>
-							<th>attr2</th>
+							<th>Temperature</th>
+							<th>Humidity</th>
 						</tr>
 					</thead>
 					<tbody>
