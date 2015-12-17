@@ -16,8 +16,7 @@ export default class Connectors extends React.Component {
 			deviceId,
 			raw: hex,
 			mqtt: hex,
-			lora: hex,
-			kpnLora: (`
+			lora: (`
 				<?xml version="1.0" encoding="UTF-8"?>
 				<DevEUI_uplink xmlns="http://uri.actility.com/lora">
 					<Time>2015-10-22T13:39:59.489+02:00</Time>
@@ -68,7 +67,6 @@ export default class Connectors extends React.Component {
 					<a className="item active" data-tab="raw">Raw</a>
 					<a className="item" data-tab="mqtt">MQTT</a>
 					<a className="item" data-tab="lora">LoRa</a>
-					<a className="item" data-tab="kpn-lora">KPN LoRa</a>
 					<a className="item" data-tab="spul">SPUL</a>
 				</div>
 				<div className="ui bottom attached tab segment active" data-tab="raw">
@@ -97,7 +95,7 @@ export default class Connectors extends React.Component {
 					/>
 				</div>
 				<div className="ui bottom attached tab segment" data-tab="lora">
-					LoRa payload hex
+					LoRa XML
 					<AceEditor
 						mode="text"
 						theme="github"
@@ -105,18 +103,6 @@ export default class Connectors extends React.Component {
 						width="auto"
 						value={this.state.lora}
 						onChange={(lora) => { this.setState({ lora }) }}
-						editorProps={{$blockScrolling: true}}
-					/>
-				</div>
-				<div className="ui bottom attached tab segment" data-tab="kpn-lora">
-					KPN LoRa XML
-					<AceEditor
-						mode="xml"
-						theme="github"
-						name="connector-kpn-lora"
-						width="auto"
-						value={this.state.kpnLora}
-						onChange={(kpnLora) => { this.setState({ kpnLora }) }}
 						editorProps={{$blockScrolling: true}}
 					/>
 				</div>
